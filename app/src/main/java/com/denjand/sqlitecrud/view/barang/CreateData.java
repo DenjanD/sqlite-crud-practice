@@ -1,0 +1,80 @@
+package com.denjand.sqlitecrud.view.barang;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.denjand.sqlitecrud.R;
+import com.denjand.sqlitecrud.database.barang.DBDataSource;
+import com.denjand.sqlitecrud.models.Barang;
+
+public class CreateData extends AppCompatActivity implements View.OnClickListener {
+    //inisilisasi elemen-elemen pada layout
+    private Button buttonSubmit;
+    private EditText edNama;
+    private EditText edMerk;
+    private EditText edHarga;
+
+    //inisialisasi kontroller/Data Source
+    private DBDataSource dataSource;
+
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.create_data);
+        buttonSubmit = (Button) findViewById(R.id.button_submit);
+        buttonSubmit.setOnClickListener(this);
+        edNama = (EditText) findViewById(R.id.nama_barang);
+        edHarga = (EditText) findViewById(R.id.harga_barang);
+        edMerk = (EditText) findViewById(R.id.merk_barang);
+
+        // instanstiasi kelas DBDataSource
+        dataSource = new DBDataSource(this);
+
+        //membuat sambungan baru ke database
+        dataSource.open();
+    }
+    //KETIKA Tombol Submit Diklik
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public void onClick(View v) {
+        // Inisialisasi data barang
+        String nama = null;
+        String merk = null;
+        String harga = null;
+        @SuppressWarnings("unused")
+        //inisialisasi barang baru (masih kosong)
+        Barang barang = null;
+        if(edNama.getText()!=null &&
+                edMerk.getText()!=null && edHarga.getText()!=null)
+        {
+ /* jika field nama, merk, dan harga tidak kosong
+ * maka masukkan ke dalam data barang*/
+            nama = edNama.getText().toString();
+            merk = edMerk.getText().toString();
+            harga = edHarga.getText().toString();
+        }
+        switch(v.getId())
+        {
+            case R.id.button_submit:
+                // insert data barang baru
+                barang = dataSource.createBarang(nama,
+                        merk, harga);
+                //konfirmasi kesuksesan
+                Toast.makeText(this, "masuk Barang\n" +
+                        "nama" + barang.getNama_barang()
+                        +
+                        "merk" + barang.getMerk_barang()
+                        +
+                        "harga" +
+                        barang.getHarga_barang(), Toast.LENGTH_LONG).show();
+                break;
+        }
+    }
+}

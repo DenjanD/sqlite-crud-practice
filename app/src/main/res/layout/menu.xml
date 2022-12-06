@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/nama_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/data_inventori"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_app"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_tambah"
+        app:layout_constraintEnd_toEndOf="@+id/nama_app"
+        app:layout_constraintStart_toStartOf="@+id/nama_app"
+        app:layout_constraintTop_toBottomOf="@+id/nama_app" />
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_tambah"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_view"
+        app:layout_constraintEnd_toEndOf="@+id/button_tambah"
+        app:layout_constraintStart_toStartOf="@+id/button_tambah"
+        app:layout_constraintTop_toBottomOf="@+id/button_tambah" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/data_makanan"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_view"
+        app:layout_constraintStart_toStartOf="@+id/button_view"
+        app:layout_constraintTop_toBottomOf="@+id/button_view" />
+
+    <Button
+        android:id="@+id/button_tambah_makanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_tambah"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button_view_makanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view"
+        app:layout_constraintEnd_toEndOf="@+id/button_tambah_makanan"
+        app:layout_constraintStart_toStartOf="@+id/button_tambah_makanan"
+        app:layout_constraintTop_toBottomOf="@+id/button_tambah_makanan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SQLiteCrud</string>
+    <string name="button_tambah">Tambah Data</string>
+    <string name="textview">Latihan SQLite</string>
+    <string name="button_view">Lihat</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="merk_barang">Merk Barang</string>
+    <string name="harga_barang">Harga Barang</string>
+    <string name="submit">Submit</string>
+    <string name="title_view">Data Barang</string>
+    <string name="title_edit">"Edit Barang | ID : "</string>
+    <string name="tombol_edit">Save</string>
+    <string name="tombol_cancel">Cancel</string>
+    <string name="view_data">List Data :</string>
+    <string name="barang_hint">Nama Barang</string>
+    <string name="merk_hint">Merk Barang</string>
+    <string name="harga_hint">Harga Barang</string>
+    <string name="ok">OK</string>
+    <string name="tombol_dialog_edit">Edit</string>
+    <string name="tombol_dialog_delete">Delete</string>
+    <string name="data_makanan">Data Makanan</string>
+    <string name="data_inventori">Data Inventori</string>
+    <string name="kategori_makanan">Kategori Makanan</string>
+    <string name="harga_makanan">Harga Makanan</string>
+    <string name="nama_makanan">Nama Makanan</string>
+</resources>
