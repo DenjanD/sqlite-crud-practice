@@ -23,4 +23,9 @@
     <string name="kategori_makanan">Kategori Makanan</string>
     <string name="harga_makanan">Harga Makanan</string>
     <string name="nama_makanan">Nama Makanan</string>
+    <string name="data_minuman">Data Minuman</string>
+    <string name="nama_minuman">Nama Minuman</string>
+    <string name="harga_minuman">Harga Minuman</string>
+    <string name="kategori_minuman">Kategori Minuman</string>
+    <string name="title_edit_minuman">Edit Minuman | ID :</string>
 </resources>

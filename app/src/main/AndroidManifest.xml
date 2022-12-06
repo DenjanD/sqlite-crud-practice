@@ -69,6 +69,34 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".view.minuman.CreateDataMinuman"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.minuman.EditDataMinuman"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.minuman.ViewDataMinuman"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.minuman.ViewSingleDataMinuman"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Menu"
             android:exported="true">
             <intent-filter>

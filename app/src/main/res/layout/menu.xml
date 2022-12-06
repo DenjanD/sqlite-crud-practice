@@ -72,4 +72,33 @@
         app:layout_constraintStart_toStartOf="@+id/button_tambah_makanan"
         app:layout_constraintTop_toBottomOf="@+id/button_tambah_makanan" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/data_minuman"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_view_makanan"
+        app:layout_constraintStart_toStartOf="@+id/button_view_makanan"
+        app:layout_constraintTop_toBottomOf="@+id/button_view_makanan" />
+
+    <Button
+        android:id="@+id/button_tambah_minuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_tambah"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_view_minuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view"
+        app:layout_constraintEnd_toEndOf="@+id/button_tambah_minuman"
+        app:layout_constraintStart_toStartOf="@+id/button_tambah_minuman"
+        app:layout_constraintTop_toBottomOf="@+id/button_tambah_minuman" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
