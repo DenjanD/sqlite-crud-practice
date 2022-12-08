@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_data"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    <TextView
+        android:id="@+id/tv_nama_kasir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/nama_kasir"
+        android:inputType="text"
+        tools:ignore="TextViewEdits" />
+    <TextView
+        android:id="@+id/tv_umur_kasir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/umur_kasir"
+        android:inputType="text"
+        tools:ignore="TextViewEdits" />
+    <TextView
+        android:id="@+id/tv_alamat_kasir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/alamat_kasir"
+        android:inputType="number"
+        tools:ignore="TextViewEdits" />
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/bt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok" />
+</LinearLayout>

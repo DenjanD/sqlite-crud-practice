@@ -97,6 +97,34 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".view.kasir.CreateDataKasir"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.kasir.EditDataKasir"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.kasir.ViewDataKasir"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.kasir.ViewSingleDataKasir"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Menu"
             android:exported="true">
             <intent-filter>

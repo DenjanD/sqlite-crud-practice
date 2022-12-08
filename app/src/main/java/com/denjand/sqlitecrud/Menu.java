@@ -13,6 +13,8 @@ import com.denjand.sqlitecrud.view.makanan.CreateDataMakanan;
 import com.denjand.sqlitecrud.view.makanan.ViewDataMakanan;
 import com.denjand.sqlitecrud.view.minuman.CreateDataMinuman;
 import com.denjand.sqlitecrud.view.minuman.ViewDataMinuman;
+import com.denjand.sqlitecrud.view.kasir.CreateDataKasir;
+import com.denjand.sqlitecrud.view.kasir.ViewDataKasir;
 
 public class Menu extends AppCompatActivity implements View.OnClickListener {
     private Button bTambah;
@@ -21,6 +23,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
     private Button bLihatMakanan;
     private Button bTambahMinuman;
     private Button bLihatMinuman;
+    private Button bTambahKasir;
+    private Button bLihatKasir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +47,12 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         bTambahMinuman.setOnClickListener(this);
         bLihatMinuman = (Button) findViewById(R.id.button_view_minuman);
         bLihatMinuman.setOnClickListener(this);
+
+        bTambahKasir = (Button)
+                findViewById(R.id.button_tambah_kasir);
+        bTambahKasir.setOnClickListener(this);
+        bLihatKasir = (Button) findViewById(R.id.button_view_kasir);
+        bLihatKasir.setOnClickListener(this);
     }
     @Override
     public void onClick(View v){
@@ -70,6 +80,14 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
             case R.id.button_view_minuman:
                 Intent viewMinuman = new Intent(this, ViewDataMinuman.class);
                 startActivity(viewMinuman);
+                break;
+            case R.id.button_tambah_kasir:
+                Intent tambahKasir = new Intent(this, CreateDataKasir.class);
+                startActivity(tambahKasir);
+                break;
+            case R.id.button_view_kasir:
+                Intent viewKasir = new Intent(this, ViewDataKasir.class);
+                startActivity(viewKasir);
                 break;
         }
     }

@@ -28,4 +28,9 @@
     <string name="harga_minuman">Harga Minuman</string>
     <string name="kategori_minuman">Kategori Minuman</string>
     <string name="title_edit_minuman">Edit Minuman | ID :</string>
+    <string name="nama_kasir">Nama Kasir</string>
+    <string name="umur_kasir">Umur Kasir</string>
+    <string name="alamat_kasir">Alamat Kasir</string>
+    <string name="title_edit_kasir">Edit Kasir | ID :</string>
+    <string name="data_kasir">Data Kasir</string>
 </resources>

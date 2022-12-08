@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/text_id_kasir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_edit_kasir"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#0000ff"
+        />
+    <EditText
+        android:id="@+id/editText_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/text_id_kasir"
+        android:importantForAutofill="no">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_umur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_nama"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_umur"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/editText_alamat"
+        >
+        <Button
+            android:id="@+id/button_save_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tombol_edit"
+            />
+        <Button
+            android:id="@+id/button_cancel_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tombol_cancel"
+            />
+    </LinearLayout>
+</RelativeLayout>
